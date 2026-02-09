@@ -11,15 +11,11 @@
   },
   "server": {
     "type": "binary",
-    "entry_point": "dist/elicitation-linux-x86_64",
+    "entry_point": "dist/elicitation",
     "mcp_config": {
-      "command": "${__dirname}/dist/elicitation-linux-x86_64",
+      "command": "${__dirname}/dist/elicitation",
       "args": [],
-      "env": {},
-      "platform_overrides": {
-        "darwin": { "command": "${__dirname}/dist/elicitation-darwin-arm64" },
-        "linux": { "command": "${__dirname}/dist/elicitation-linux-x86_64" }
-      }
+      "env": {}
     }
   },
   "tools": [
@@ -28,23 +24,10 @@
       "description": "Ask the user clarifying questions with predefined options"
     }
   ],
-  "compatibility": {
-    "platforms": ["darwin", "linux"]
-  },
   "_meta": {
     "store.tool.mcpb": {
       "scripts": {
         "build": "cargo build --release"
-      },
-      "mcp_config": {
-        "platform_overrides": {
-          "darwin-arm64": { "command": "${__dirname}/dist/elicitation-darwin-arm64" },
-          "linux-arm64": { "command": "${__dirname}/dist/elicitation-linux-arm64" },
-          "linux-x86_64": { "command": "${__dirname}/dist/elicitation-linux-x86_64" }
-        }
-      },
-      "compatibility": {
-        "platforms": ["darwin-arm64", "linux-arm64", "linux-x86_64"]
       },
       "static_responses": {
         "tools/list": {
