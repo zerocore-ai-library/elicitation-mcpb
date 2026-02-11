@@ -377,7 +377,7 @@ impl Server {
     /// on implementation choices. Each question can have 2-4 options, and an
     /// "Other" option for custom input is automatically added.
     #[tool(
-        name = "elicitation__clarify",
+        name = "clarify",
         description = "Ask the user clarifying questions with predefined options. Gathers preferences, clarifies requirements, or gets decisions on implementation choices."
     )]
     async fn clarify(&self, params: Parameters<ClarifyInput>) -> Result<Json<ClarifyOutput>, McpError> {

@@ -4,7 +4,7 @@ An MCP server for gathering user input through structured questions with predefi
 
 ## Tools
 
-### `elicitation__clarify`
+### `clarify`
 
 Ask the user clarifying questions with predefined options.
 

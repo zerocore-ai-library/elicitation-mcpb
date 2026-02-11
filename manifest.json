@@ -20,7 +20,7 @@
   },
   "tools": [
     {
-      "name": "elicitation__clarify",
+      "name": "clarify",
       "description": "Ask the user clarifying questions with predefined options"
     }
   ],
@@ -34,7 +34,7 @@
   "_meta": {
     "store.tool.mcpb": {
       "scripts": {
-        "build": "cargo build --release"
+        "build": "cargo build --release && mkdir -p dist && cp target/release/elicitation dist/"
       },
       "compatibility": {
         "platforms": [
@@ -50,7 +50,7 @@
         "tools/list": {
           "tools": [
             {
-              "name": "elicitation__clarify",
+              "name": "clarify",
               "description": "Ask the user clarifying questions with predefined options",
               "input_schema": {
                 "type": "object",
