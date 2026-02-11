@@ -4,30 +4,18 @@ An MCP server for gathering user input through structured questions with predefi
 
 ## Setup
 
-### Using tool CLI (Recommended)
+### Using tool CLI
 
-Install from https://github.com/zerocore-ai/tool-cli
+Install the CLI from https://github.com/zerocore-ai/tool-cli
 
 ```bash
-# Build the tool
-tool run build /path/to/elicitation
+# Install from tool.store
+tool install library/elicitation
 ```
 
 ```bash
-# Validate the manifest
-tool validate /path/to/elicitation
-```
-
-### Manual Build
-
-```bash
-cargo build --release
-```
-
-## Testing
-
-```bash
-cargo test
+# View available tools
+tool info library/elicitation
 ```
 
 ## Tools
