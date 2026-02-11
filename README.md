@@ -2,6 +2,34 @@
 
 An MCP server for gathering user input through structured questions with predefined options.
 
+## Setup
+
+### Using tool CLI (Recommended)
+
+Install from https://github.com/zerocore-ai/tool-cli
+
+```bash
+# Build the tool
+tool run build /path/to/elicitation
+```
+
+```bash
+# Validate the manifest
+tool validate /path/to/elicitation
+```
+
+### Manual Build
+
+```bash
+cargo build --release
+```
+
+## Testing
+
+```bash
+cargo test
+```
+
 ## Tools
 
 ### `clarify`
@@ -32,34 +60,6 @@ Each option object:
 |-------|------|-------------|
 | `answers` | object | User's answers keyed by question index. Value is string (single-select) or array (multi-select) |
 | `cancelled` | boolean | Whether the user cancelled the elicitation |
-
-## Setup
-
-### Using tool CLI (Recommended)
-
-Install from https://github.com/zerocore-ai/tool-cli
-
-```bash
-# Build the tool
-tool run build /path/to/elicitation
-```
-
-```bash
-# Validate the manifest
-tool validate /path/to/elicitation
-```
-
-### Manual Build
-
-```bash
-cargo build --release
-```
-
-## Testing
-
-```bash
-cargo test
-```
 
 ## License
 
